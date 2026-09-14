@@ -19,10 +19,10 @@ import { Simulador } from "@/components/jm/Simulador";
 import { WhatsAppFloat } from "@/components/jm/WhatsAppFloat";
 import { whatsappLink, ADDRESS, MAPS_LINK, INSTAGRAM, PHONE_DISPLAY } from "@/lib/jm";
 
-import fachada from "@/assets/fachada.jpg.asset.json";
+import fachada from "@/assets/fachada-real.jpg.asset.json";
 import showroomInterior from "@/assets/showroom-interior.jpg.asset.json";
 import showroomMotos from "@/assets/showroom-motos.jpg.asset.json";
-import showroomEletricas from "@/assets/showroom-eletricas.jpg.asset.json";
+import showroomEletricas from "@/assets/showroom-eletricas-real.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
