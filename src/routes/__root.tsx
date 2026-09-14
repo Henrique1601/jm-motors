@@ -77,14 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "JM Motors Santos | Motos e Scooters Elétricas" },
+      {
+        name: "description",
+        content:
+          "JM Motors - Loja multimarca em Santos/SP. Motos seminovas revisadas e scooters elétricas. Compra, venda, troca, consignação e cartão em até 24x.",
+      },
+      { name: "author", content: "JM Motors" },
+      { property: "og:title", content: "JM Motors Santos | Motos e Scooters Elétricas" },
+      {
+        property: "og:description",
+        content:
+          "Loja multimarca em Santos: motos seminovas revisadas, scooters elétricas, troca, consignação e parcelamento em até 24x.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -108,7 +115,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>

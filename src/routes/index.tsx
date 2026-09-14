@@ -42,6 +42,47 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "MotorcycleDealer",
+          name: "JM Motors Santos",
+          image: "https://jm-motors.lovable.app/fachada-real.jpg",
+          telephone: "+5513976007271",
+          priceRange: "$$$",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Av. Senador Feijó, 455",
+            addressLocality: "Santos",
+            addressRegion: "SP",
+            postalCode: "11015-503",
+            addressCountry: "BR",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: -23.9452,
+            longitude: -46.3312,
+          },
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              opens: "09:00",
+              closes: "18:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Saturday",
+              opens: "09:00",
+              closes: "13:00",
+            },
+          ],
+          sameAs: ["https://instagram.com/jm.motors_"],
+        }),
+      },
+    ],
   }),
   component: Index,
 });
