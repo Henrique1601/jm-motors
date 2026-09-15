@@ -18,6 +18,7 @@ Este segundo cérebro conecta o negócio real da concessionária e loja física 
 - [[03 - Guia de Skills e Servidores MCP]]: Como e quando utilizar cada MCP (Lovable, Chrome DevTools, Neon, Notion) e cada Skill no ciclo de desenvolvimento.
 - [[06 - Diagnostico Tecnico e Roadmap de Melhorias]]: Auditoria do código atual, gaps de segurança/SEO/UX encontrados e plano de evolução com upsell.
 - [[07 - SEO Local Santos e Presenca Digital]]: Como dominar a primeira página do Google na Baixada Santista com Schema.org, LocalBusiness e Google Maps.
+- [[08 - Dominio Proprio e Deploy Vercel]]: Passo a passo completo para deploy na Vercel, compra no Registro.br e apontamento DNS.
 
 ---
 

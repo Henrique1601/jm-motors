@@ -3,18 +3,10 @@ import { Zap, Gauge, BatteryCharging, Cog } from "lucide-react";
 import { whatsappLink } from "@/lib/jm";
 import { Button } from "@/components/ui/button";
 
-import citycoco from "@/assets/citycoco.jpg.asset.json";
-import chopper from "@/assets/chopper.jpg.asset.json";
-import eletricaChopper from "@/assets/eletrica-chopper.jpg.asset.json";
-import scooter from "@/assets/scooter.jpg.asset.json";
-import esportiva from "@/assets/esportiva.jpg.asset.json";
-import naked from "@/assets/naked.jpg.asset.json";
-
 type Categoria = "eletricas" | "urbanas" | "convencionais";
 
 type Moto = {
   nome: string;
-  img: string;
   categoria: Categoria;
   specs: string[];
   destaque: string;
@@ -23,42 +15,36 @@ type Moto = {
 const MOTOS: Moto[] = [
   {
     nome: "Citycoco Fat Tire",
-    img: citycoco.url,
     categoria: "eletricas",
     specs: ["2000W", "Até 60 km/h", "Autonomia 60 km", "Sem CNH*"],
     destaque: "Elétrica",
   },
   {
     nome: "Chopper Elétrica Tron",
-    img: chopper.url,
     categoria: "eletricas",
     specs: ["1500W", "Até 50 km/h", "Bateria removível", "Freio a disco"],
     destaque: "Elétrica",
   },
   {
     nome: "Evee Cruiser Black",
-    img: eletricaChopper.url,
     categoria: "eletricas",
     specs: ["3000W", "Até 70 km/h", "Autonomia 80 km", "Banco duplo"],
     destaque: "Elétrica",
   },
   {
     nome: "Scooter Urbana 125",
-    img: scooter.url,
     categoria: "urbanas",
     specs: ["125cc", "Automática", "Baixo consumo", "Revisada"],
     destaque: "Seminova",
   },
   {
     nome: "Street Naked 160",
-    img: naked.url,
     categoria: "convencionais",
     specs: ["160cc", "Injeção eletrônica", "Freio CBS", "Procedência OK"],
     destaque: "Seminova",
   },
   {
     nome: "Esportiva 300R",
-    img: esportiva.url,
     categoria: "convencionais",
     specs: ["300cc", "ABS", "Bi-cilíndrica", "Revisada"],
     destaque: "Seminova",
@@ -108,51 +94,50 @@ export function Catalogo() {
           {lista.map((m) => (
             <article
               key={m.nome}
-              className="group overflow-hidden border border-border bg-card transition-colors hover:border-primary"
+              className="group flex flex-col justify-between border border-border bg-card p-6 transition-colors hover:border-primary"
             >
-              <div className="relative">
-                <img
-                  src={m.img}
-                  alt={m.nome}
-                  loading="lazy"
-                  width={1024}
-                  height={768}
-                  className="h-52 w-full object-cover"
-                />
-                <span className="absolute left-3 top-3 bg-primary px-2.5 py-1 text-xs font-bold uppercase text-primary-foreground">
-                  {m.destaque}
-                </span>
-              </div>
-              <div className="p-5">
-                <h3 className="text-xl font-bold uppercase text-foreground">{m.nome}</h3>
-                <ul className="mt-3 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
+              <div>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="bg-primary/10 border border-primary/30 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-primary">
+                    {m.destaque}
+                  </span>
+                  <span className="text-xs uppercase tracking-wider text-muted-foreground">
+                    {m.categoria === "eletricas"
+                      ? "100% Elétrica"
+                      : m.categoria === "urbanas"
+                        ? "Scooter Urbana"
+                        : "Convencional"}
+                  </span>
+                </div>
+                <h3 className="mt-4 text-2xl font-extrabold uppercase text-foreground">{m.nome}</h3>
+                <ul className="mt-4 grid grid-cols-2 gap-2.5 border-t border-border/60 pt-4 text-sm text-muted-foreground">
                   {m.specs.map((s, i) => (
                     <li key={s} className="flex items-center gap-1.5">
                       {i === 0 ? (
-                        <Zap className="size-3.5 text-primary" />
+                        <Zap className="size-4 shrink-0 text-primary" />
                       ) : i === 1 ? (
-                        <Gauge className="size-3.5 text-primary" />
+                        <Gauge className="size-4 shrink-0 text-primary" />
                       ) : i === 2 ? (
-                        <BatteryCharging className="size-3.5 text-primary" />
+                        <BatteryCharging className="size-4 shrink-0 text-primary" />
                       ) : (
-                        <Cog className="size-3.5 text-primary" />
+                        <Cog className="size-4 shrink-0 text-primary" />
                       )}
-                      {s}
+                      <span>{s}</span>
                     </li>
                   ))}
                 </ul>
-                <Button asChild className="mt-5 w-full rounded-none font-semibold uppercase">
-                  <a
-                    href={whatsappLink(
-                      `Olá, JM Motors! Tenho interesse na ${m.nome}. Ainda está disponível?`,
-                    )}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Tenho interesse
-                  </a>
-                </Button>
               </div>
+              <Button asChild className="mt-6 w-full rounded-none font-semibold uppercase">
+                <a
+                  href={whatsappLink(
+                    `Olá, JM Motors! Tenho interesse na ${m.nome}. Ainda está disponível?`,
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tenho interesse
+                </a>
+              </Button>
             </article>
           ))}
         </div>
