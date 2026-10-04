@@ -28,5 +28,7 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.sw?
+
+# Raw upload drop folders
+img/

@@ -40,7 +40,9 @@ export const Route = createFileRoute("/")({
           "Loja multimarca em Santos: motos seminovas revisadas, scooters elétricas, troca, consignação e parcelamento em até 24x.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "/brand/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/brand/og-image.jpg" },
     ],
     scripts: [
       {
@@ -49,7 +51,11 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "MotorcycleDealer",
           name: "JM Motors Santos",
-          image: "https://jm-motors.lovable.app/fachada-real.jpg",
+          logo: "https://jm-motors.lovable.app/brand/logo-badge.png",
+          image: [
+            "https://jm-motors.lovable.app/brand/logo-badge.png",
+            "https://jm-motors.lovable.app/brand/og-image.jpg",
+          ],
           telephone: "+5513976007271",
           priceRange: "$$$",
           address: {
@@ -128,9 +134,16 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <a href="#topo" className="font-display text-xl font-extrabold uppercase tracking-tight">
-            JM <span className="text-primary">Motors</span>
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
+          <a href="#topo" className="flex items-center gap-3 font-display text-xl font-extrabold uppercase tracking-tight">
+            <img
+              src="/brand/logo-badge.png"
+              alt="Logo JM Motors"
+              className="size-10 rounded-full border border-primary/50 object-cover shadow-sm shadow-primary/20"
+            />
+            <span>
+              JM <span className="text-primary">Motors</span>
+            </span>
           </a>
           <nav className="hidden gap-7 text-sm font-semibold uppercase tracking-wide text-muted-foreground md:flex">
             <a href="#estoque" className="hover:text-foreground">Estoque</a>
@@ -366,10 +379,17 @@ function Index() {
       </section>
 
       <footer className="border-t border-border bg-card py-10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-display text-base font-extrabold uppercase text-foreground">
-            JM <span className="text-primary">Motors</span> — Multimarca
-          </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-3">
+            <img
+              src="/brand/logo-badge.png"
+              alt="Logo JM Motors"
+              className="size-9 rounded-full border border-primary/50 object-cover"
+            />
+            <p className="font-display text-base font-extrabold uppercase text-foreground">
+              JM <span className="text-primary">Motors</span> — Multimarca
+            </p>
+          </div>
           <p>{ADDRESS}</p>
         </div>
       </footer>

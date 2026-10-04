@@ -12,6 +12,7 @@ Este segundo cérebro conecta o negócio real da concessionária e loja física 
 - [[01 - Visao Geral do Projeto e Freelancer]]: O briefing do freela, metas comerciais, modelo de faturamento e persona do cliente santista.
 - [[04 - Negocio JM Motors e Segmentos]]: Catálogo de motos convencionais, scooters elétricas, regulamentação CONTRAN nº 996/2023, consignação e avaliação de usadas.
 - [[05 - Estrategia de Conversao e Funil WhatsApp]]: Copywriting para Santos, roteiros de mensagens pré-formatadas e gatilhos de fechamento rápido.
+- [[09 - Catalogo Oficial de Modelos Eletricos]]: Matriz dos 11 modelos elétricos da loja com fotos, especificações técnicas, preços e diretrizes legais.
 
 ### 2. Engenharia e Desenvolvimento
 - [[02 - Regras de Ouro e Diretrizes Tecnicas]]: Regras inegociáveis de código, integridade com Lovable, TypeScript estrito e design system em Tailwind v4.
