@@ -77,22 +77,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "JM Motors Santos | Motos e Scooters Elétricas" },
+      { title: "JM MOTORS ELETRIC BIKE | Motos e Scooters Elétricas em Santos" },
       {
         name: "description",
         content:
-          "JM Motors - Loja multimarca em Santos/SP. Motos seminovas revisadas e scooters elétricas. Compra, venda, troca, consignação e cartão em até 24x.",
+          "JM MOTORS ELETRIC BIKE - Loja de referência em Santos/SP. Scooters elétricas, Fat Bikes, Triciclos e Motos Seminovas. Compra, venda, troca, consignação e cartão em até 24x.",
       },
-      { name: "author", content: "JM Motors" },
-      { property: "og:title", content: "JM Motors Santos | Motos e Scooters Elétricas" },
+      { name: "author", content: "JM MOTORS ELETRIC BIKE" },
+      { property: "og:title", content: "JM MOTORS ELETRIC BIKE | Motos e Scooters Elétricas em Santos" },
       {
         property: "og:description",
         content:
-          "Loja multimarca em Santos: motos seminovas revisadas, scooters elétricas, troca, consignação e parcelamento em até 24x.",
+          "JM MOTORS ELETRIC BIKE em Santos/SP: scooters elétricas, fat bikes, seminovas revisadas, troca, consignação e parcelamento em até 24x no cartão.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/brand/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "JM MOTORS ELETRIC BIKE | Santos - SP" },
       { name: "twitter:image", content: "/brand/og-image.jpg" },
     ],
     links: [

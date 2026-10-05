@@ -1,3 +1,4 @@
+export const STORE_NAME = "JM MOTORS ELETRIC BIKE";
 export const WHATSAPP_NUMBER = "5513976007271";
 export const PHONE_DISPLAY = "(13) 97600-7271";
 export const INSTAGRAM = "https://instagram.com/jm.motors_";

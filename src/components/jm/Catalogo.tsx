@@ -7,6 +7,8 @@ import {
   CheckCircle2,
   FileText,
   MessageCircle,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { whatsappLink } from "@/lib/jm";
 import { Button } from "@/components/ui/button";
@@ -391,13 +393,44 @@ export function Catalogo() {
               modeloSelecionado.fotosReais &&
               modeloSelecionado.fotosReais.length > 0 ? (
                 <div className="mt-3 space-y-3">
-                  <div className="relative overflow-hidden rounded border border-border bg-black">
+                  <div className="group relative overflow-hidden rounded border border-border bg-black">
                     <img
                       src={modeloSelecionado.fotosReais[fotoAtiva]}
                       alt={`${modeloSelecionado.nome} foto ${fotoAtiva + 1}`}
-                      className="mx-auto max-h-[380px] w-full object-contain"
+                      className="mx-auto max-h-[420px] w-full object-contain transition-all duration-300"
                     />
-                    <span className="absolute bottom-2 right-2 rounded bg-black/80 px-2 py-0.5 text-xs font-bold text-white backdrop-blur">
+
+                    {/* SETAS DE NAVEGAÇÃO DE FOTOS */}
+                    {modeloSelecionado.fotosReais.length > 1 && (
+                      <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2">
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setFotoAtiva(
+                              (prev) =>
+                                (prev - 1 + modeloSelecionado.fotosReais!.length) %
+                                modeloSelecionado.fotosReais!.length,
+                            )
+                          }
+                          aria-label="Foto anterior"
+                          className="flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/70 text-white backdrop-blur transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground active:scale-90"
+                        >
+                          <ChevronLeft className="size-5" />
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setFotoAtiva((prev) => (prev + 1) % modeloSelecionado.fotosReais!.length)
+                          }
+                          aria-label="Próxima foto"
+                          className="flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/70 text-white backdrop-blur transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground active:scale-90"
+                        >
+                          <ChevronRight className="size-5" />
+                        </button>
+                      </div>
+                    )}
+
+                    <span className="absolute bottom-2 right-2 rounded bg-black/80 px-2.5 py-1 text-xs font-bold text-white backdrop-blur">
                       Foto {fotoAtiva + 1} de {modeloSelecionado.fotosReais.length}
                     </span>
                   </div>
@@ -407,9 +440,12 @@ export function Catalogo() {
                     {modeloSelecionado.fotosReais.map((foto, idx) => (
                       <button
                         key={foto}
+                        type="button"
                         onClick={() => setFotoAtiva(idx)}
                         className={`size-16 shrink-0 overflow-hidden rounded border-2 transition-all ${
-                          fotoAtiva === idx ? "border-primary scale-105" : "border-border opacity-70 hover:opacity-100"
+                          fotoAtiva === idx
+                            ? "border-primary ring-2 ring-primary ring-offset-2 ring-offset-background scale-105"
+                            : "border-border opacity-70 hover:opacity-100"
                         }`}
                       >
                         <img
@@ -493,7 +529,7 @@ export function Catalogo() {
                 <Button asChild size="lg" className="rounded-none font-bold uppercase">
                   <a
                     href={whatsappLink(
-                      `Olá, JM Motors! Gostaria de mais informações sobre o modelo ${modeloSelecionado.nome} (R$ ${formatBRL(modeloSelecionado.preco)}) e consultar cores disponíveis na loja.`,
+                      `Olá, JM MOTORS ELETRIC BIKE! Gostaria de mais informações sobre o modelo ${modeloSelecionado.nome} (${formatBRL(modeloSelecionado.preco)}) e consultar cores disponíveis na loja.`,
                     )}
                     target="_blank"
                     rel="noopener noreferrer"

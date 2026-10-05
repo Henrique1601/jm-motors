@@ -167,3 +167,46 @@
   background-size: 16px 16px;
   background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
 }
+
+@keyframes checkerSlide {
+  from {
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+  }
+  to {
+    background-position: 32px 0, 32px 8px, 40px -8px, 24px 0px;
+  }
+}
+
+@utility checker-strip-animated {
+  background-image:
+    linear-gradient(45deg, oklch(0.98 0 0) 25%, transparent 25%),
+    linear-gradient(-45deg, oklch(0.98 0 0) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, oklch(0.98 0 0) 75%),
+    linear-gradient(-45deg, transparent 75%, oklch(0.98 0 0) 75%);
+  background-size: 16px 16px;
+  animation: checkerSlide 14s linear infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@utility animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .checker-strip-animated {
+    animation: none !important;
+  }
+  .animate-pulse-glow {
+    animation: none !important;
+  }
+}

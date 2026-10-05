@@ -80,8 +80,9 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     ],
     regulamentacao: "Isento CNH/Placa (Autopropelido)",
     destaqueBadge: "Mais Vendida",
-    imagemCover: "/images/catalog/sudu-a3-plus/cover.jpg",
+    imagemCover: "/images/models/sudu-a3-plus/cover.jpg",
     imagemFlyer: "/images/catalog/sudu-a3-plus/flyer.png",
+    fotosReais: ["/images/models/sudu-a3-plus/foto-01.jpg", "/images/models/sudu-a3-plus/foto-02.jpg", "/images/models/sudu-a3-plus/foto-03.jpg", "/images/models/sudu-a3-plus/foto-04.jpg", "/images/models/sudu-a3-plus/foto-05.jpg", "/images/models/sudu-a3-plus/foto-06.jpg", "/images/models/sudu-a3-plus/foto-07.jpg", "/images/models/sudu-a3-plus/foto-08.jpg", "/images/models/sudu-a3-plus/foto-09.jpg", "/images/models/sudu-a3-plus/foto-10.jpg", "/images/models/sudu-a3-plus/foto-11.jpg", "/images/models/sudu-a3-plus/foto-12.jpg", "/images/models/sudu-a3-plus/foto-13.jpg", "/images/models/sudu-a3-plus/foto-14.jpg", "/images/models/sudu-a3-plus/foto-15.jpg", "/images/models/sudu-a3-plus/foto-16.jpg"],
   },
   {
     id: "sudu-a5",
@@ -109,7 +110,7 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     destaqueBadge: "Com Baú",
     imagemCover: "/images/models/sudu-a5/cover.jpg",
     imagemFlyer: "/images/catalog/sudu-a5/flyer.png",
-    fotosReais: ["/public/images/models/sudu-a5/foto-01.jpg", "/public/images/models/sudu-a5/foto-02.jpg", "/public/images/models/sudu-a5/foto-03.jpg", "/public/images/models/sudu-a5/foto-04.jpg", "/public/images/models/sudu-a5/foto-05.jpg", "/public/images/models/sudu-a5/foto-06.jpg", "/public/images/models/sudu-a5/foto-07.jpg", "/public/images/models/sudu-a5/foto-08.jpg", "/public/images/models/sudu-a5/foto-09.jpg", "/public/images/models/sudu-a5/foto-10.jpg", "/public/images/models/sudu-a5/foto-11.jpg", "/public/images/models/sudu-a5/foto-12.jpg"],
+    fotosReais: ["/images/models/sudu-a5/foto-01.jpg", "/images/models/sudu-a5/foto-02.jpg", "/images/models/sudu-a5/foto-03.jpg", "/images/models/sudu-a5/foto-04.jpg", "/images/models/sudu-a5/foto-05.jpg", "/images/models/sudu-a5/foto-06.jpg", "/images/models/sudu-a5/foto-07.jpg", "/images/models/sudu-a5/foto-08.jpg", "/images/models/sudu-a5/foto-09.jpg", "/images/models/sudu-a5/foto-10.jpg", "/images/models/sudu-a5/foto-11.jpg", "/images/models/sudu-a5/foto-12.jpg"],
   },
   {
     id: "tron-1000w",
@@ -137,7 +138,7 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     destaqueBadge: "Custom Chopper",
     imagemCover: "/images/models/tron-1000w/cover.jpg",
     imagemFlyer: "/images/catalog/tron-1000w/flyer.png",
-    fotosReais: ["/public/images/models/tron-1000w/foto-01.jpg", "/public/images/models/tron-1000w/foto-02.jpg", "/public/images/models/tron-1000w/foto-03.jpg", "/public/images/models/tron-1000w/foto-04.jpg", "/public/images/models/tron-1000w/foto-05.jpg", "/public/images/models/tron-1000w/foto-06.jpg", "/public/images/models/tron-1000w/foto-07.jpg", "/public/images/models/tron-1000w/foto-08.jpg", "/public/images/models/tron-1000w/foto-09.jpg", "/public/images/models/tron-1000w/foto-10.jpg", "/public/images/models/tron-1000w/foto-11.jpg", "/public/images/models/tron-1000w/foto-12.jpg", "/public/images/models/tron-1000w/foto-13.jpg", "/public/images/models/tron-1000w/foto-14.jpg", "/public/images/models/tron-1000w/foto-15.jpg", "/public/images/models/tron-1000w/foto-16.jpg", "/public/images/models/tron-1000w/foto-17.jpg", "/public/images/models/tron-1000w/foto-18.jpg", "/public/images/models/tron-1000w/foto-19.jpg", "/public/images/models/tron-1000w/foto-20.jpg", "/public/images/models/tron-1000w/foto-21.jpg", "/public/images/models/tron-1000w/foto-22.jpg", "/public/images/models/tron-1000w/foto-23.jpg", "/public/images/models/tron-1000w/foto-24.jpg", "/public/images/models/tron-1000w/foto-25.jpg", "/public/images/models/tron-1000w/foto-26.jpg", "/public/images/models/tron-1000w/foto-27.jpg", "/public/images/models/tron-1000w/foto-28.jpg", "/public/images/models/tron-1000w/foto-29.jpg"],
+    fotosReais: ["/images/models/tron-1000w/foto-01.jpg", "/images/models/tron-1000w/foto-02.jpg", "/images/models/tron-1000w/foto-03.jpg", "/images/models/tron-1000w/foto-04.jpg", "/images/models/tron-1000w/foto-05.jpg", "/images/models/tron-1000w/foto-06.jpg", "/images/models/tron-1000w/foto-07.jpg", "/images/models/tron-1000w/foto-08.jpg", "/images/models/tron-1000w/foto-09.jpg", "/images/models/tron-1000w/foto-10.jpg", "/images/models/tron-1000w/foto-11.jpg", "/images/models/tron-1000w/foto-12.jpg", "/images/models/tron-1000w/foto-13.jpg", "/images/models/tron-1000w/foto-14.jpg", "/images/models/tron-1000w/foto-15.jpg", "/images/models/tron-1000w/foto-16.jpg", "/images/models/tron-1000w/foto-17.jpg", "/images/models/tron-1000w/foto-18.jpg", "/images/models/tron-1000w/foto-19.jpg", "/images/models/tron-1000w/foto-20.jpg", "/images/models/tron-1000w/foto-21.jpg", "/images/models/tron-1000w/foto-22.jpg", "/images/models/tron-1000w/foto-23.jpg", "/images/models/tron-1000w/foto-24.jpg", "/images/models/tron-1000w/foto-25.jpg", "/images/models/tron-1000w/foto-26.jpg", "/images/models/tron-1000w/foto-27.jpg", "/images/models/tron-1000w/foto-28.jpg", "/images/models/tron-1000w/foto-29.jpg"],
   },
   {
     id: "triciclo-tron",
@@ -165,7 +166,7 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     destaqueBadge: "3 Rodas & Conforto",
     imagemCover: "/images/models/triciclo-tron/cover.jpg",
     imagemFlyer: "/images/catalog/tron-1000w/flyer.png",
-    fotosReais: ["/public/images/models/triciclo-tron/foto-01.jpg", "/public/images/models/triciclo-tron/foto-02.jpg", "/public/images/models/triciclo-tron/foto-03.jpg", "/public/images/models/triciclo-tron/foto-04.jpg", "/public/images/models/triciclo-tron/foto-05.jpg", "/public/images/models/triciclo-tron/foto-06.jpg", "/public/images/models/triciclo-tron/foto-07.jpg", "/public/images/models/triciclo-tron/foto-08.jpg", "/public/images/models/triciclo-tron/foto-09.jpg", "/public/images/models/triciclo-tron/foto-10.jpg", "/public/images/models/triciclo-tron/foto-11.jpg"],
+    fotosReais: ["/images/models/triciclo-tron/foto-01.jpg", "/images/models/triciclo-tron/foto-02.jpg", "/images/models/triciclo-tron/foto-03.jpg", "/images/models/triciclo-tron/foto-04.jpg", "/images/models/triciclo-tron/foto-05.jpg", "/images/models/triciclo-tron/foto-06.jpg", "/images/models/triciclo-tron/foto-07.jpg", "/images/models/triciclo-tron/foto-08.jpg", "/images/models/triciclo-tron/foto-09.jpg", "/images/models/triciclo-tron/foto-10.jpg", "/images/models/triciclo-tron/foto-11.jpg"],
   },
   {
     id: "ouxi-q8",
@@ -193,7 +194,7 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     destaqueBadge: "Câmbio Shimano",
     imagemCover: "/images/models/ouxi-q8/cover.jpg",
     imagemFlyer: "/images/catalog/ouxi-q8/flyer.png",
-    fotosReais: ["/public/images/models/ouxi-q8/foto-01.jpg", "/public/images/models/ouxi-q8/foto-02.jpg", "/public/images/models/ouxi-q8/foto-03.jpg", "/public/images/models/ouxi-q8/foto-04.jpg", "/public/images/models/ouxi-q8/foto-05.jpg", "/public/images/models/ouxi-q8/foto-06.jpg", "/public/images/models/ouxi-q8/foto-07.jpg", "/public/images/models/ouxi-q8/foto-08.jpg", "/public/images/models/ouxi-q8/foto-09.jpg", "/public/images/models/ouxi-q8/foto-10.jpg", "/public/images/models/ouxi-q8/foto-11.jpg", "/public/images/models/ouxi-q8-titanium/foto-01.jpg", "/public/images/models/ouxi-q8-titanium/foto-02.jpg", "/public/images/models/ouxi-q8-titanium/foto-03.jpg", "/public/images/models/ouxi-q8-titanium/foto-04.jpg", "/public/images/models/ouxi-q8-titanium/foto-05.jpg", "/public/images/models/ouxi-q8-titanium/foto-06.jpg", "/public/images/models/ouxi-q8-titanium/foto-07.jpg", "/public/images/models/ouxi-q8-titanium/foto-08.jpg"],
+    fotosReais: ["/images/models/ouxi-q8/foto-01.jpg", "/images/models/ouxi-q8/foto-02.jpg", "/images/models/ouxi-q8/foto-03.jpg", "/images/models/ouxi-q8/foto-04.jpg", "/images/models/ouxi-q8/foto-05.jpg", "/images/models/ouxi-q8/foto-06.jpg", "/images/models/ouxi-q8/foto-07.jpg", "/images/models/ouxi-q8/foto-08.jpg", "/images/models/ouxi-q8/foto-09.jpg", "/images/models/ouxi-q8/foto-10.jpg", "/images/models/ouxi-q8/foto-11.jpg", "/images/models/ouxi-q8-titanium/foto-01.jpg", "/images/models/ouxi-q8-titanium/foto-02.jpg", "/images/models/ouxi-q8-titanium/foto-03.jpg", "/images/models/ouxi-q8-titanium/foto-04.jpg", "/images/models/ouxi-q8-titanium/foto-05.jpg", "/images/models/ouxi-q8-titanium/foto-06.jpg", "/images/models/ouxi-q8-titanium/foto-07.jpg", "/images/models/ouxi-q8-titanium/foto-08.jpg"],
   },
   {
     id: "ouxi-gt20",
@@ -221,7 +222,7 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     destaqueBadge: "Alta Autonomia",
     imagemCover: "/images/models/ouxi-gt20/cover.jpg",
     imagemFlyer: "/images/catalog/ouxi-gt20/flyer.png",
-    fotosReais: ["/public/images/models/ouxi-gt20/foto-01.jpg", "/public/images/models/ouxi-gt20/foto-02.jpg", "/public/images/models/ouxi-gt20/foto-03.jpg", "/public/images/models/ouxi-gt20/foto-04.jpg", "/public/images/models/ouxi-gt20/foto-05.jpg", "/public/images/models/ouxi-gt20/foto-06.jpg", "/public/images/models/ouxi-gt20/foto-07.jpg", "/public/images/models/ouxi-gt20/foto-08.jpg"],
+    fotosReais: ["/images/models/ouxi-gt20/foto-01.jpg", "/images/models/ouxi-gt20/foto-02.jpg", "/images/models/ouxi-gt20/foto-03.jpg", "/images/models/ouxi-gt20/foto-04.jpg", "/images/models/ouxi-gt20/foto-05.jpg", "/images/models/ouxi-gt20/foto-06.jpg", "/images/models/ouxi-gt20/foto-07.jpg", "/images/models/ouxi-gt20/foto-08.jpg"],
   },
   {
     id: "ouxi-v8-ultra",
@@ -249,7 +250,7 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     destaqueBadge: "Mais Confortável",
     imagemCover: "/images/models/ouxi-v8-ultra/cover.jpg",
     imagemFlyer: "/images/catalog/ouxi-v8-ultra/flyer.png",
-    fotosReais: ["/public/images/models/ouxi-v8-ultra/foto-01.jpg", "/public/images/models/ouxi-v8-ultra/foto-02.jpg", "/public/images/models/ouxi-v8-ultra/foto-03.jpg", "/public/images/models/ouxi-v8-ultra/foto-04.jpg", "/public/images/models/ouxi-v8-ultra/foto-05.jpg", "/public/images/models/ouxi-v8-ultra/foto-06.jpg", "/public/images/models/ouxi-v8-ultra/foto-07.jpg", "/public/images/models/ouxi-v8-ultra/foto-08.jpg"],
+    fotosReais: ["/images/models/ouxi-v8-ultra/foto-01.jpg", "/images/models/ouxi-v8-ultra/foto-02.jpg", "/images/models/ouxi-v8-ultra/foto-03.jpg", "/images/models/ouxi-v8-ultra/foto-04.jpg", "/images/models/ouxi-v8-ultra/foto-05.jpg", "/images/models/ouxi-v8-ultra/foto-06.jpg", "/images/models/ouxi-v8-ultra/foto-07.jpg", "/images/models/ouxi-v8-ultra/foto-08.jpg"],
   },
   {
     id: "ouxi-v8-pro",
@@ -277,7 +278,7 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     destaqueBadge: "Custo-Benefício",
     imagemCover: "/images/models/ouxi-v8-pro/cover.jpg",
     imagemFlyer: "/images/catalog/ouxi-v8-pro/flyer.png",
-    fotosReais: ["/public/images/models/ouxi-v8-pro/foto-01.jpg", "/public/images/models/ouxi-v8-pro/foto-02.jpg", "/public/images/models/ouxi-v8-pro/foto-03.jpg", "/public/images/models/ouxi-v8-pro/foto-04.jpg", "/public/images/models/ouxi-v8-pro/foto-05.jpg", "/public/images/models/ouxi-v8-pro/foto-06.jpg", "/public/images/models/ouxi-v8-pro/foto-07.jpg", "/public/images/models/ouxi-v8-pro/foto-08.jpg", "/public/images/models/ouxi-v8-pro/foto-09.jpg", "/public/images/models/ouxi-v8-pro/foto-10.jpg", "/public/images/models/ouxi-v8-pro/foto-11.jpg", "/public/images/models/ouxi-v8-pro/foto-12.jpg", "/public/images/models/ouxi-v8-pro/foto-13.jpg"],
+    fotosReais: ["/images/models/ouxi-v8-pro/foto-01.jpg", "/images/models/ouxi-v8-pro/foto-02.jpg", "/images/models/ouxi-v8-pro/foto-03.jpg", "/images/models/ouxi-v8-pro/foto-04.jpg", "/images/models/ouxi-v8-pro/foto-05.jpg", "/images/models/ouxi-v8-pro/foto-06.jpg", "/images/models/ouxi-v8-pro/foto-07.jpg", "/images/models/ouxi-v8-pro/foto-08.jpg", "/images/models/ouxi-v8-pro/foto-09.jpg", "/images/models/ouxi-v8-pro/foto-10.jpg", "/images/models/ouxi-v8-pro/foto-11.jpg", "/images/models/ouxi-v8-pro/foto-12.jpg", "/images/models/ouxi-v8-pro/foto-13.jpg"],
   },
   {
     id: "evee-x15",
@@ -303,8 +304,9 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     ],
     regulamentacao: "Isento CNH/Placa (Autopropelido)",
     destaqueBadge: "Dobrável",
-    imagemCover: "/images/catalog/evee-x15/cover.jpg",
+    imagemCover: "/images/models/scooter-racing-red/cover.jpg",
     imagemFlyer: "/images/catalog/evee-x15/flyer.png",
+    fotosReais: ["/images/models/scooter-racing-red/foto-01.jpg", "/images/models/scooter-racing-red/foto-02.jpg", "/images/models/scooter-racing-red/foto-03.jpg", "/images/models/scooter-racing-red/foto-04.jpg", "/images/models/scooter-racing-red/foto-05.jpg", "/images/models/scooter-racing-red/foto-06.jpg", "/images/models/scooter-racing-red/foto-07.jpg", "/images/models/scooter-racing-red/foto-08.jpg", "/images/models/scooter-racing-red/foto-09.jpg", "/images/models/scooter-racing-red/foto-10.jpg", "/images/models/scooter-racing-red/foto-11.jpg"],
   },
   {
     id: "ft-03",
@@ -330,8 +332,9 @@ export const MODELOS_ELETRICOS: ModeloEletrico[] = [
     ],
     regulamentacao: "Isento CNH/Placa (Autopropelido)",
     destaqueBadge: "Estilo Scrambler",
-    imagemCover: "/images/catalog/ft-03/cover.jpg",
+    imagemCover: "/images/models/citycoco-fat-tire/cover.jpg",
     imagemFlyer: "/images/catalog/ft-03/flyer.png",
+    fotosReais: ["/images/models/citycoco-fat-tire/foto-01.jpg", "/images/models/citycoco-fat-tire/foto-02.jpg", "/images/models/citycoco-fat-tire/foto-03.jpg", "/images/models/citycoco-fat-tire/foto-04.jpg", "/images/models/citycoco-fat-tire/foto-05.jpg", "/images/models/citycoco-fat-tire/foto-06.jpg", "/images/models/citycoco-fat-tire/foto-07.jpg", "/images/models/citycoco-fat-tire/foto-08.jpg", "/images/models/citycoco-fat-tire/foto-09.jpg", "/images/models/citycoco-fat-tire/foto-10.jpg", "/images/models/citycoco-fat-tire/foto-11.jpg", "/images/models/citycoco-fat-tire/foto-12.jpg", "/images/models/citycoco-fat-tire/foto-13.jpg"],
   },
   {
     id: "st-748",
