@@ -25,51 +25,7 @@ import {
   type CategoriaEletrica,
 } from "@/data/catalog";
 
-import scooterSeminova from "@/assets/scooter.jpg.asset.json";
-import esportivaSeminova from "@/assets/esportiva.jpg.asset.json";
-import nakedSeminova from "@/assets/naked.jpg.asset.json";
-
-type CategoriaFiltro = CategoriaEletrica | "seminovas";
-
-interface MotoConvencional {
-  id: string;
-  nome: string;
-  subtitulo: string;
-  precoEstimado: string;
-  img: string;
-  specs: string[];
-  destaque: string;
-}
-
-const MOTOS_CONVENCIONAIS: MotoConvencional[] = [
-  {
-    id: "scooter-125",
-    nome: "Scooter Urbana 125cc",
-    subtitulo: "Praticidade e economia para o trânsito diário",
-    precoEstimado: "Consulte estoque",
-    img: scooterSeminova.url,
-    specs: ["125cc", "Automática", "Baixo consumo", "Revisada com procedência"],
-    destaque: "Seminova",
-  },
-  {
-    id: "naked-160",
-    nome: "Street Naked 160cc",
-    subtitulo: "Excelente resposta urbana e liquidez garantida",
-    precoEstimado: "Consulte estoque",
-    img: nakedSeminova.url,
-    specs: ["160cc", "Injeção eletrônica", "Freio CBS", "Laudo cautelar 100%"],
-    destaque: "Seminova",
-  },
-  {
-    id: "esportiva-300",
-    nome: "Esportiva 300R",
-    subtitulo: "Design marcante, torque e alta estabilidade",
-    precoEstimado: "Consulte estoque",
-    img: esportivaSeminova.url,
-    specs: ["300cc", "Freios ABS", "Bi-cilíndrica", "Revisão preventiva OK"],
-    destaque: "Seminova",
-  },
-];
+type CategoriaFiltro = CategoriaEletrica;
 
 const TABS: { id: CategoriaFiltro; label: string; count?: number }[] = [
   { id: "todos", label: "Todas Elétricas", count: MODELOS_ELETRICOS.length },
@@ -77,7 +33,6 @@ const TABS: { id: CategoriaFiltro; label: string; count?: number }[] = [
   { id: "fat-bikes", label: "Fat Bikes Aro 20" },
   { id: "custom", label: "Chopper & Custom" },
   { id: "patinetes", label: "Patinetes" },
-  { id: "seminovas", label: "Motos Convencionais" },
 ];
 
 function formatBRL(valor: number): string {
@@ -91,11 +46,9 @@ export function Catalogo() {
   const [fotoAtiva, setFotoAtiva] = useState<number>(0);
 
   const eletricasFiltradas =
-    abaAtiva === "seminovas"
-      ? []
-      : abaAtiva === "todos"
-        ? MODELOS_ELETRICOS
-        : MODELOS_ELETRICOS.filter((m) => m.categoria === abaAtiva);
+    abaAtiva === "todos"
+      ? MODELOS_ELETRICOS
+      : MODELOS_ELETRICOS.filter((m) => m.categoria === abaAtiva);
 
   function abrirModal(modelo: ModeloEletrico) {
     setModeloSelecionado(modelo);
@@ -109,13 +62,13 @@ export function Catalogo() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between">
           <div>
             <span className="inline-block border border-primary/60 bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              Catálogo Oficial JM Motors
+              Catálogo Oficial JM MOTORS ELETRIC BIKE
             </span>
             <h2 className="mt-3 text-4xl font-extrabold uppercase tracking-tight text-foreground sm:text-5xl">
-              Modelos & Estoque
+              Modelos Elétricos & Estoque
             </h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
-              Conheça as melhores opções de mobilidade elétrica e seminovas de Santos. Bateria
+              Conheça as melhores opções de mobilidade 100% elétrica de Santos. Bateria
               removível, recarga em tomada comum residencial e modelos autopropelidos isentos de CNH.
             </p>
           </div>
@@ -152,8 +105,7 @@ export function Catalogo() {
         </div>
 
         {/* LISTAGEM DE ELÉTRICAS */}
-        {abaAtiva !== "seminovas" && (
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {eletricasFiltradas.map((modelo) => (
               <article
                 key={modelo.id}
@@ -267,60 +219,6 @@ export function Catalogo() {
               </article>
             ))}
           </div>
-        )}
-
-        {/* LISTAGEM DE CONVENCIONAIS SEMINOVAS */}
-        {abaAtiva === "seminovas" && (
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {MOTOS_CONVENCIONAIS.map((moto) => (
-              <article
-                key={moto.id}
-                className="group flex flex-col justify-between overflow-hidden border border-border bg-card transition-colors hover:border-primary"
-              >
-                <div>
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-900">
-                    <img
-                      src={moto.img}
-                      alt={moto.nome}
-                      loading="lazy"
-                      className="size-full object-cover"
-                    />
-                    <span className="absolute left-3 top-3 bg-primary px-2.5 py-1 text-xs font-bold uppercase text-primary-foreground">
-                      {moto.destaque}
-                    </span>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="text-xl font-bold uppercase text-foreground">{moto.nome}</h3>
-                    <p className="mt-1 text-xs text-muted-foreground">{moto.subtitulo}</p>
-                    <ul className="mt-4 space-y-1.5 text-xs text-muted-foreground">
-                      {moto.specs.map((s) => (
-                        <li key={s} className="flex items-center gap-2">
-                          <CheckCircle2 className="size-3.5 text-primary" />
-                          <span>{s}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="p-5 pt-0">
-                  <Button asChild className="w-full rounded-none font-semibold uppercase">
-                    <a
-                      href={whatsappLink(
-                        `Olá, JM Motors! Gostaria de consultar o estoque atual de motos convencionais (${moto.nome}).`,
-                      )}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <MessageCircle className="mr-2 size-4" />
-                      Consultar no WhatsApp
-                    </a>
-                  </Button>
-                </div>
-              </article>
-            ))}
-          </div>
-        )}
 
         {/* AVISO LEGAL E LEGISLAÇÃO CONTRAN */}
         <div className="mt-10 rounded border border-border/80 bg-card/60 p-5 text-xs text-muted-foreground">

@@ -34,7 +34,7 @@ const FOTOS_LOJA: FotoLoja[] = [
     id: "showroom-interno",
     src: "/images/store/showroom-interno-banner.jpg",
     titulo: "Showroom Interno JM MOTORS",
-    subtitulo: "Amplo salão com modelos elétricos e seminovas prontas para entrega",
+    subtitulo: "Amplo salão com modelos elétricos prontos para entrega e test-drive imediato",
     tag: "Showroom",
   },
   {

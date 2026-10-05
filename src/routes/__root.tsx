@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "JM MOTORS ELETRIC BIKE - Loja de referência em Santos/SP. Scooters elétricas, Fat Bikes, Triciclos e Motos Seminovas. Compra, venda, troca, consignação e cartão em até 24x.",
+          "JM MOTORS ELETRIC BIKE - Loja de referência em Santos/SP. Scooters elétricas, Fat Bikes, Triciclos e Patinetes. Bateria removível, recarga em tomada comum e cartão em até 24x.",
       },
       { name: "author", content: "JM MOTORS ELETRIC BIKE" },
       { property: "og:title", content: "JM MOTORS ELETRIC BIKE | Motos e Scooters Elétricas em Santos" },
       {
         property: "og:description",
         content:
-          "JM MOTORS ELETRIC BIKE em Santos/SP: scooters elétricas, fat bikes, seminovas revisadas, troca, consignação e parcelamento em até 24x no cartão.",
+          "JM MOTORS ELETRIC BIKE em Santos/SP: scooters elétricas, fat bikes, patinetes, troca, consignação e parcelamento em até 24x no cartão.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/brand/og-image.jpg" },

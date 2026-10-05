@@ -31,13 +31,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "JM MOTORS ELETRIC BIKE - Compra, venda, troca e consignação de motos em Santos/SP. Scooters elétricas, fat bikes e seminovas revisadas com parcelamento em até 24x.",
+          "JM MOTORS ELETRIC BIKE - A sua loja especializada em mobilidade 100% elétrica em Santos/SP. Scooters elétricas, fat bikes aro 20, patinetes e triciclos com parcelamento em até 24x.",
       },
       { property: "og:title", content: "JM MOTORS ELETRIC BIKE | Motos e Scooters Elétricas" },
       {
         property: "og:description",
         content:
-          "Loja física em Santos: scooters elétricas, fat bikes aro 20, motos seminovas revisadas, troca, consignação e parcelamento em até 24x no cartão.",
+          "Loja física em Santos: scooters elétricas, fat bikes aro 20, ciclomotores e triciclos. Avaliação na troca, consignação e parcelamento em até 24x no cartão.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/brand/og-image.jpg" },
@@ -99,7 +99,7 @@ export const Route = createFileRoute("/")({
 
 const DIFERENCIAIS = [
   { icon: RefreshCw, title: "Compra, venda e troca", text: "Negocie sua moto usada com a melhor avaliação da Baixada." },
-  { icon: Star, title: "Melhor avaliação", text: "Transparência total na troca pelo seu modelo elétrico ou seminovo." },
+  { icon: Star, title: "Melhor avaliação", text: "Transparência total na troca pelo seu modelo elétrico novo." },
   { icon: CreditCard, title: "Cartão em até 24x", text: "Parcelamento facilitado e aprovação ágil na hora." },
   { icon: ShieldCheck, title: "Procedência garantida", text: "Revisão rigorosa, laudo e assistência técnica local." },
 ];
@@ -218,7 +218,7 @@ function Index() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            A sua loja especializada em mobilidade elétrica e seminovas de referência na Baixada
+            A sua loja especializada em mobilidade 100% elétrica de referência na Baixada
             Santista. Bateria de lítio removível, recarga em tomada residencial comum e modelos
             autopropelidos com isenção total de CNH e emplacamento.
           </p>
@@ -227,7 +227,7 @@ function Index() {
           <div className="mt-6 flex flex-wrap gap-4 text-xs font-bold uppercase tracking-wider text-muted-foreground">
             <span className="inline-flex items-center gap-1.5 border border-border bg-card/60 px-3 py-1 text-foreground backdrop-blur">
               <Zap className="size-3.5 text-primary" />
-              100% Elétricas & Seminovas
+              100% Elétricas & Zero Emissão
             </span>
             <span className="inline-flex items-center gap-1.5 border border-border bg-card/60 px-3 py-1 text-foreground backdrop-blur">
               <BatteryCharging className="size-3.5 text-primary" />
@@ -356,7 +356,7 @@ function Index() {
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
             Na <strong>JM MOTORS ELETRIC BIKE</strong> você garante a melhor avaliação da Baixada
-            Santista. Compramos à vista, pegamos sua seminova como entrada na sua moto elétrica ou
+            Santista. Compramos à vista, pegamos sua moto usada como entrada no seu modelo elétrico novo ou
             cuidamos da venda em consignação com total segurança jurídica.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3.5">
@@ -412,7 +412,7 @@ function Index() {
                 JM <span className="text-primary">MOTORS</span> ELETRIC BIKE
               </p>
               <p className="text-xs text-muted-foreground">
-                Loja de Referência em Mobilidade Elétrica e Seminovas em Santos / SP
+                Loja de Referência em Mobilidade 100% Elétrica em Santos / SP
               </p>
             </div>
           </div>
